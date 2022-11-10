@@ -23,11 +23,13 @@ public class GuessingGame {
         Random rand = new Random();
         int numRand = rand.nextInt(userRange);
 
+        // loops through and gives the user a number of guesses;
+        // future additions could include a varying number of guesses/difficulties
         for (int i = 0; i < 3; i++) {
             Scanner guess = new Scanner(System.in);
             int userGuess = guess.nextInt();
 
-            //
+            // checks the users number, if its correct it breaks the loop
             if (userGuess == numRand) {
                 System.out.println("You got it!");
                 break;
@@ -37,7 +39,7 @@ public class GuessingGame {
                 System.out.println("Too low!");
             }
 
-            // checks how many guess the user has
+            // checks how many guesses the user has left
             if (i == 2){
                 System.out.println("Sorry, all out of guesses!");
             } else {
