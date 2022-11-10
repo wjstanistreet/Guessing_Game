@@ -16,5 +16,19 @@ public class WhatShouldIWear {
 
         System.out.println("You've said it's currently " + temp + " Degrees C and " + weather);
 
+        // weather and temperature descriptions
+        String[] weatherDesc = {"sunny", "rainy", "cloudy", "snowing", "foggy", "windy"};
+        String[] tempDesc = {"freezing", "cold", "chilly", "moderate", "warm", "boiling"};
+
+        // clothing types
+        String[] clothType = {"coat", "trousers", "shorts", "t-shirt"};
+        String[] coatType = {"light", "heavy", "waterproof", "windbreaker"};
+
+        if (temp < 0){
+
+        } else if (0 < temp && temp < 9) {
+
+        }
+
     }
 }
